@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Poiret+One&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mangata & Gallo</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/photos/Asset 3@3x.png" alt="Mangata & Gallo Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-banner">
+            <h1>Contact Us</h1>
+        </section>
+    </main>
+    <form id="form" action="/submit" method="post">
+        <label for="email">EMAIL</label> <input id="email" type="email" required>
+        <br>
+        <label for="phone">phone number</label> <input id="phone" type="text"
+            onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+            minlength="10" maxlength="10" required />
+        <br>
+        <input type="submit">
+    </form>
+    <footer>
+        <div class="footer-column logo-small">
+            <img src="/photos/Asset 3@3x.png" alt="Mangata & Gallo Logo Small">
+        </div>
+        <div class="footer-column copyright">
+            <p>&copy; 2024 MANGATA GALLO. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+
+
+
+body {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffd700; 
+
+
+}
+
+
+
+
+
+
+
+.contact-banner {
+    background-color: #1a1a1a;
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffd700; 
+
+}
+
+.contact-banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.contact-banner p {
+    font-size: 36px;
+    color: #e0e0e0;
+    margin-top: 20px;
+}
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: center;
+}
+
+.logo-small img {
+    width: 100px;
+}
+
+footer p {
+    color: #e0e0e0;
+    margin: 0;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .contact-banner h1 {
+        font-size: 36px;
+    }
+
+    .contact-banner p {
+        font-size: 24px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
